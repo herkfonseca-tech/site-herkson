@@ -63,11 +63,21 @@ body {
   gap: 12px;
 }
 /* Logo no topo */
+/* ============================
+   LOGO TOPO
+============================ */
 .logo-topo {
-  height: 48px;
+  height: 90px;       /* aumenta bem o tamanho */
   width: auto;
   display: block;
 }
+
+@media (max-width: 600px) {
+  .logo-topo {
+    height: 60px;   /* reduz no mobile */
+  }
+}
+
 
 .brand {
   display: flex;
@@ -476,6 +486,7 @@ body {
   width: auto;
   display: block;
 }
+
 
 
 
