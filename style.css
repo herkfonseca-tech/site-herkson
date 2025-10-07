@@ -62,24 +62,13 @@ body {
   align-items: center;
   gap: 12px;
 }
-
-/* ============================
-   LOGO TOPO
-============================ */
+/* Logo no topo */
 .logo-topo {
-  height: 90px;
+  height: 110px;   /* aumenta o tamanho visível */
   width: auto;
   display: block;
 }
 
-@media (max-width: 600px) {
-  .logo-topo {
-    height: 60px;
-  }
-}
-
-  width: auto;
-  display: block;
 }
 
 .brand__mark {
@@ -477,6 +466,7 @@ body {
   width: auto;
   display: block;
 }
+
 
 
 
