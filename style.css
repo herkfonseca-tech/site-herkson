@@ -352,3 +352,52 @@ body {
 .floating-buttons a.youtube-button {
   background-color: #FF0000;
 }
+/* ==== SEÇÃO PARCEIROS ==== */
+.parceiros-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.parceiros-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #333;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logos-container img {
+  max-height: 80px;
+  max-width: 180px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: grayscale(20%);
+}
+
+.logos-container img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logos-container {
+    gap: 20px;
+  }
+
+  .logos-container img {
+    max-height: 60px;
+    max-width: 140px;
+  }
+}
+
