@@ -63,12 +63,52 @@ body {
   gap: 12px;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-topo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
 .brand__mark {
   width: 28px;
   height: 28px;
   border-radius: 8px;
   background: linear-gradient(135deg, var(--blue), #3f83f8);
 }
+
+
+.logo-topo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.brand__mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--blue), #3f83f8);
+}
+
+.logo-topo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.brand__mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--blue), #3f83f8);
+}
+
 
 .brand__text {
   display: flex;
@@ -425,5 +465,6 @@ body {
     height: 38px; /* reduz um pouco no mobile */
   }
 }
+
 
 
