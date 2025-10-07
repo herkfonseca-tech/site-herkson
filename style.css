@@ -27,7 +27,7 @@ html, body {
 }
 
 /* ============================
-   CONTAINERS
+   CONTAINER
 ============================ */
 .container {
   max-width: 1200px;
@@ -50,19 +50,19 @@ html, body {
 .nav__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo à esquerda / menu à direita */
-  height: 480px; /* acompanha logo 4x maior */
+  justify-content: space-between;
+  height: 240px; /* ajustado para logo média */
+  padding: 0 20px;
 }
 
 /* LOGO */
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
 .logo-topo {
-  height: 440px;       /* 4x maior */
+  height: 220px; /* metade da versão anterior */
   width: auto;
   display: block;
 }
@@ -71,9 +71,8 @@ html, body {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* garante que gruda no lado direito */
-  gap: 32px;
-  font-size: 22px;
+  gap: 24px;
+  font-size: 18px;
 }
 
 .menu a {
@@ -87,9 +86,9 @@ html, body {
   color: var(--blue);
 }
 
-/* BOTÃO DE DESTAQUE (ex: Fale Conosco) */
+/* Botão destaque (ex: Fale Conosco) */
 .menu .btn-outline {
-  padding: 12px 20px;
+  padding: 8px 16px;
   border: 2px solid var(--blue);
   border-radius: 40px;
   color: var(--blue);
@@ -157,24 +156,26 @@ html, body {
   }
 
   .logo-topo {
-    height: 280px; /* reduz no tablet */
+    height: 160px;
   }
 
   .menu {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 560px) {
   .logo-topo {
-    height: 200px; /* reduz ainda mais no celular */
+    height: 120px;
   }
 
   .menu {
-    gap: 16px;
-    font-size: 16px;
+    gap: 14px;
+    font-size: 14px;
   }
 }
+
+
