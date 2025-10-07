@@ -466,6 +466,27 @@ body {
   width: auto;
   display: block;
 }
+/* ==== OVERRIDE DA LOGO NO TOPO ==== */
+.nav__inner {
+  height: 90px;           /* aumenta a altura do cabeçalho */
+}
+
+.logo-topo {
+  height: 72px;           /* tamanho visível da logo */
+  width: auto;
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 960px) {
+  .nav__inner { height: 76px; }
+  .logo-topo { height: 56px; }
+}
+@media (max-width: 560px) {
+  .nav__inner { height: 60px; }
+  .logo-topo { height: 42px; }
+}
+
 
 
 
