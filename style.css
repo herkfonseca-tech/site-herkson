@@ -309,6 +309,44 @@ body{
     display: none;
   }
 }
+/* Botões fixos WhatsApp + Instagram */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.floating-buttons a {
+  width: 50px;
+  height: 50px;
+  background-color: #25D366; /* cor do WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.floating-buttons a img {
+  width: 28px;
+  height: 28px;
+  filter: invert(100%);
+}
+
+.floating-buttons a:hover {
+  transform: scale(1.1);
+}
+
+/* Instagram botão */
+.floating-buttons a.instagram-button {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
 
 
 
