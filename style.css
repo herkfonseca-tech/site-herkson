@@ -182,6 +182,13 @@ body {
   color: var(--muted);
   max-width: 560px;
 }
+.hero__subline {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
 
 .hero__ctas {
   display: flex;
@@ -404,3 +411,4 @@ body {
   .cards { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; gap: 10px; }
 }
+
