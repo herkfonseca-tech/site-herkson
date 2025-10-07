@@ -216,5 +216,99 @@ body{
     display: none;
   }
 }
+/* Container geral dos botões flutuantes */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* Botão Instagram */
+.instagram-float {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.instagram-float:hover {
+  transform: scale(1.1);
+}
+
+.instagram-float img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
+}
+
+/* Container do botão + texto WhatsApp */
+.whatsapp-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Botão principal WhatsApp */
+.whatsapp-float {
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Balão de texto do WhatsApp */
+.whatsapp-text {
+  margin-right: 10px;
+  background-color: #ffffff;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-container:hover .whatsapp-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Esconde o texto em telas pequenas */
+@media (max-width: 600px) {
+  .whatsapp-text {
+    display: none;
+  }
+}
+
 
 
