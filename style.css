@@ -1,181 +1,24 @@
-/* ============================
-   VARIÁVEIS GLOBAIS
-============================ */
-:root {
-  --blue: #1E3A5F;
-  --blue-50: #E9F3FF;
-  --blue-100: #CFE6FF;
-  --text: #1b1f23;
-  --muted: #637083;
-  --white: #fff;
-}
-
-/* ============================
-   RESET BÁSICO
-============================ */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--text);
-  background: var(--white);
-  line-height: 1.6;
-}
-
-/* ============================
-   CONTAINER
-============================ */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ============================
-   NAVBAR
-============================ */
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid #eef2f7;
-}
-
 .nav__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 240px; /* ajustado para logo média */
+  height: 180px; /* reduzir bastante de 240px para 180px */
   padding: 0 20px;
-}
-
-/* LOGO */
-.brand {
-  display: flex;
-  align-items: center;
 }
 
 .logo-topo {
-  height: 220px; /* metade da versão anterior */
+  height: 140px; /* ajustar para um valor visível mas moderado */
   width: auto;
-  display: block;
 }
 
-/* MENU */
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-size: 18px;
-}
-
-.menu a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.menu a:hover {
-  color: var(--blue);
-}
-
-/* Botão destaque (ex: Fale Conosco) */
-.menu .btn-outline {
-  padding: 8px 16px;
-  border: 2px solid var(--blue);
-  border-radius: 40px;
-  color: var(--blue);
-}
-
-.menu .btn-outline:hover {
-  background: var(--blue);
-  color: #fff;
-}
-
-/* ============================
-   HERO
-============================ */
-.hero {
-  background: linear-gradient(180deg, var(--blue-50), #fff);
-  padding: 48px 0;
-}
-
-.hero__grid {
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.hero h1 {
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 12px 0 10px 0;
-  color: var(--blue);
-}
-
-.hero__photo img {
-  width: 100%;
-  max-width: 420px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(30, 58, 95, .25);
-}
-
-/* ============================
-   FOOTER
-============================ */
-.footer {
-  background: #102743;
-  color: #cbd5e1;
-}
-
-.footer__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0;
-}
-
-/* ============================
-   RESPONSIVO
-============================ */
 @media (max-width: 960px) {
   .nav__inner {
-    flex-direction: column;
     height: auto;
-    padding: 20px 0;
   }
-
   .logo-topo {
-    height: 160px;
-  }
-
-  .menu {
-    margin-top: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 16px;
+    height: 100px;
   }
 }
 
 @media (max-width: 560px) {
   .logo-topo {
-    height: 120px;
-  }
-
-  .menu {
-    gap: 14px;
-    font-size: 14px;
+    height: 80px;
   }
 }
-
-
