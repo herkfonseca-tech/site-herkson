@@ -411,4 +411,19 @@ body {
   .cards { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; gap: 10px; }
 }
+/* ============================
+   LOGO TOPO
+============================ */
+.logo-topo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo-topo {
+    height: 38px; /* reduz um pouco no mobile */
+  }
+}
+
 
