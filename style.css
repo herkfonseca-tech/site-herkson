@@ -471,6 +471,12 @@ body {
     height: 38px; /* reduz um pouco no mobile */
   }
 }
+.logo-topo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
 
 
 
